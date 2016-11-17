@@ -92,7 +92,7 @@ public class WinChecker {
     }
 
     private static boolean checkCorners(List<TicTacToeSpace> state) {
-        TicTacToeSpace[] spacesToCheck = new TicTacToeSpace[BOARD_SIZE];
+        TicTacToeSpace[] spacesToCheck = new TicTacToeSpace[4];
         spacesToCheck[0] = state.get(0);
         spacesToCheck[1] = state.get(BOARD_SIZE - 1);
         spacesToCheck[2] = state.get(BOARD_SIZE * (BOARD_SIZE - 1));
@@ -145,9 +145,6 @@ public class WinChecker {
         }
 
         for (TicTacToeSpace space : spaces) {
-            if (space == null) {
-                break; // sometimes a null slips in here
-            }
             if (space.getMarked() != target) {
                 return false;
             }
