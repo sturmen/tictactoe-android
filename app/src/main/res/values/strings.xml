@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="clear">CLEAR</string>
+    <string name="win_message">YOU WIN!</string>
+    <string name="circle_win_message">CIRCLE WINS!</string>
+    <string name="cross_win_message">CROSS WINS!</string>
+    <string name="play_again">Play Again</string>
+    <string name="not_allowed">That move is not allowed.</string>
+    <string name="tie_game">The game ends in a tie.</string>
+</resources>
