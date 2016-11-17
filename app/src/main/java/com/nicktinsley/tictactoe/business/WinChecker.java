@@ -108,7 +108,7 @@ public class WinChecker {
     private static boolean checkBox(List<TicTacToeSpace> state) {
         double boxLengthSize = Math.floor(BOARD_SIZE / 2.0);
         int boxSize = (int) (boxLengthSize * boxLengthSize);
-        if (boxSize > 4) {
+        if (boxSize < 4) {
             // has to form square at minimum to be considered a viable winning pattern
             return false;
         }
